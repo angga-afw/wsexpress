@@ -8,5 +8,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/all', controller.getUsers);
+router.post('/register', controller.register);
+router.put('/update/:id', controller.updateUser);
 
 module.exports = router;
